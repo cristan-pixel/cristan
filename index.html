@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristan A. Arañez — Computer Science Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ BACKGROUND CIRCUIT LAYER ============ -->
+  <div class="circuit-bg" aria-hidden="true">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="glow g3"></div>
+    <svg viewBox="0 0 1600 1400" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+          <path d="M46 0H0V46" fill="none" stroke="rgba(56,189,248,0.05)" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)" />
+
+      <path class="trace-line slow" d="M-10,180 H320 V60 H900 V260 H1620" />
+      <path class="trace-line" d="M-10,420 H220 V520 H640 V400 H1200 V620 H1620" />
+      <path class="trace-line fast" d="M-10,760 H420 V860 H980 V700 H1620" />
+      <path class="trace-line slow" d="M-10,1020 H300 V1140 H860 V980 H1400 V1120 H1620" />
+      <path class="trace-line" d="M-10,1260 H540 V1340 H1100 V1220 H1620" />
+
+      <circle class="trace-node" cx="320" cy="180" r="3.5" />
+      <circle class="trace-node" cx="900" cy="60" r="3.5" />
+      <circle class="trace-node" cx="640" cy="520" r="3.5" />
+      <circle class="trace-node" cx="1200" cy="400" r="3.5" />
+      <circle class="trace-node" cx="420" cy="760" r="3.5" />
+      <circle class="trace-node" cx="980" cy="700" r="3.5" />
+      <circle class="trace-node" cx="860" cy="1140" r="3.5" />
+      <circle class="trace-node" cx="1400" cy="980" r="3.5" />
+      <circle class="trace-node" cx="540" cy="1260" r="3.5" />
+      <circle class="trace-node" cx="1100" cy="1220" r="3.5" />
+    </svg>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo"><span class="logo-chip"></span> C.ARAÑEZ</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Projects</a>
+        <a href="#experience">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio // Board Rev 2.0</p>
+          <h1>Building apps <span class="accent">that solve everyday problems.</span></h1>
+          <p class="lede">Computer Science student who learns by shipping. I build full working systems — from food ordering to fitness tracking to gym management — to turn classroom concepts into things people can actually use.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+          </div>
+          <div class="pin-strip">
+            <span class="pin">BS Computer Science</span>
+            <span class="pin">Open to OJT / Internship</span>
+            <span class="pin">3 Systems Built</span>
+          </div>
+        </div>
+
+        <div class="ic-wrap reveal">
+          <!-- Swap this src for your own transparent (background-removed) full-body PNG -->
+          <img src="assets/profile_wholebody.png" alt="Full-body portrait of Cristan A. Arañez" class="hero-photo">
+          <div class="ic">
+            <div class="ic-legs" id="ic-legs"></div>
+            <div class="ic-label">
+              <div class="name">C. ARAÑEZ</div>
+              <div class="role">CS Student &amp; Developer</div>
+              <div class="code mono">U1 // REV.2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Datasheet 01</p>
+          <h2>About</h2>
+        </div>
+
+        <div class="datasheet reveal">
+          <div class="datasheet-visual">
+            <div class="die">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <!-- Profile photo mount: swap assets/profile-placeholder.svg for your own photo -->
+            <div class="profile-mount">
+              <div class="profile-frame">
+                <span class="tick top"></span>
+                <span class="tick bottom"></span>
+                <span class="tick left"></span>
+                <span class="tick right"></span>
+                <img src="assets/cris.jpg" alt="Portrait of Cristan A. Arañez">
+              </div>
+              <span class="profile-caption mono">Unit&nbsp;01 // Portrait</span>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <table class="spec-table">
+              <tr><td>Student ID</td><td>244944</td></tr>
+              <tr><td>Package</td><td>Tangub City Global College</td></tr>
+              <tr><td>Function</td><td>Full-stack app development (student)</td></tr>
+              <tr><td>Standing</td><td>3rd Year, BS Computer Science</td></tr>
+            </table>
+            <p><strong>I'm still a student, but I don't like learning from slides alone.</strong> Every concept I pick up in class — databases, APIs, user authentication — I try to put into an actual working system as soon as I can.</p>
+            <p>So far that's meant building <strong>FoodHub</strong>, a food delivery platform, a <strong>Daily Task Reminder</strong> app that tracks steps, distance, and calories, and a <strong>Gym Management System</strong> that handles member payments and records. None of them are perfect, but each one taught me something the classroom couldn't.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Component Library</p>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="reveal">
+          <div class="socket">
+            <div class="socket-head"><span class="idx">Socket A</span> Languages</div>
+            <div class="chip-row">
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">PHP</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="socket">
+            <div class="socket-head"><span class="idx">Socket B</span> Frontend</div>
+            <div class="chip-row">
+              <span class="skill-chip">HTML5 / CSS3</span>
+              <span class="skill-chip">React</span>
+              <span class="skill-chip">Bootstrap</span>
+              <span class="skill-chip">Figma</span>
+            </div>
+          </div>
+
+          <div class="socket">
+            <div class="socket-head"><span class="idx">Socket C</span> Backend &amp; Data</div>
+            <div class="chip-row">
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">PHP</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">Firebase</span>
+            </div>
+          </div>
+
+          <div class="socket">
+            <div class="socket-head"><span class="idx">Socket D</span> Tools</div>
+            <div class="chip-row">
+              <span class="skill-chip">Git &amp; GitHub</span>
+              <span class="skill-chip">Android Studio</span>
+              <span class="skill-chip">XAMPP</span>
+              <span class="skill-chip">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Module Rack</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="chip-card reveal">
+            <div class="project-head">
+              <h3>FoodHub</h3>
+              <span class="rev-tag">V1.0</span>
+            </div>
+            <p class="project-desc">A food delivery system that connects customers with local restaurants — browse menus, add items to cart, check out, and track an order from kitchen to doorstep.</p>
+            <div class="io-row">
+              <span class="io-pin">PHP</span>
+              <span class="io-pin">MySQL</span>
+              <span class="io-pin">JavaScript</span>
+              <span class="io-pin">Bootstrap</span>
+            </div>
+            <a class="project-link" href="#">View project <span class="arrow">→</span></a>
+          </article>
+
+          <article class="chip-card reveal">
+            <div class="project-head">
+              <h3>Daily Task Reminder</h3>
+              <span class="rev-tag">V1.0</span>
+            </div>
+            <p class="project-desc">A personal productivity app that keeps a person's day on track — task reminders alongside a built-in step tracker that logs distance in kilometers and calories burned.</p>
+            <div class="io-row">
+              <span class="io-pin">Java</span>
+              <span class="io-pin">Android Studio</span>
+              <span class="io-pin">SQLite</span>
+              <span class="io-pin">Sensor API</span>
+            </div>
+            <a class="project-link" href="#">View project <span class="arrow">→</span></a>
+          </article>
+
+          <article class="chip-card reveal">
+            <div class="project-head">
+              <h3>Gym Management System</h3>
+              <span class="rev-tag">V1.0</span>
+            </div>
+            <p class="project-desc">An admin system for gyms that manages member records and payments in one place — tracking subscriptions, renewals, and who's paid for the month.</p>
+            <div class="io-row">
+              <span class="io-pin">PHP</span>
+              <span class="io-pin">MySQL</span>
+              <span class="io-pin">HTML / CSS</span>
+              <span class="io-pin">Admin Dashboard</span>
+            </div>
+            <a class="project-link" href="#">View project <span class="arrow">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">System Bus</p>
+          <h2>Education &amp; Journey</h2>
+        </div>
+
+        <div class="bus reveal">
+          <div class="bus-item">
+            <div class="bus-meta">
+              <h3>BS Computer Science</h3>
+              <span class="bus-dates mono">2024 — Present</span>
+            </div>
+            <div class="bus-org">Tangub City Global College</div>
+            <p class="desc">Coursework in data structures, databases, and software engineering — applying each new concept to a real, working project instead of leaving it in the notebook.</p>
+          </div>
+
+          <div class="bus-item">
+            <div class="bus-meta">
+              <h3>Student Developer</h3>
+              <span class="bus-dates mono">2024 — Present</span>
+            </div>
+            <div class="bus-org">Self-Directed Projects</div>
+            <p class="desc">Designed and built FoodHub, Daily Task Reminder, and the Gym Management System solo — handling planning, database design, front-end, and back-end for each.</p>
+          </div>
+
+          <div class="bus-item">
+            <div class="bus-meta">
+              <h3>Still Learning</h3>
+              <span class="bus-dates mono">Available Now</span>
+            </div>
+            <div class="bus-org">3rd Year, BS Computer Science</div>
+            <p class="desc">Every project so far has been a way to stress-test what I'm learning in class — there's a lot I still don't know, and that's the point. Each system I build teaches me something the syllabus doesn't.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-cta reveal">
+          <p class="eyebrow" style="justify-content:center;">Output Ports</p>
+          <h2>Let's build something together.</h2>
+          <p>Open to OJT placements, internships, and entry-level opportunities. Fastest reply is by email.</p>
+          <a class="btn btn-primary" href="mailto:hello@cristanaranez.dev">Send an Email</a>
+        </div>
+
+        <div class="ports reveal">
+          <a class="port" href="mailto:hello@cristanaranez.dev">
+            <div class="label">Gmail</div>
+            <div class="value">baternacristan@gmail.com</div>
+          </a>
+          <a class="port" href="#">
+            <div class="label">GitHub</div>
+            <div class="value">/cristanaranez</div>
+          </a>
+          <a class="port" href="#">
+            <div class="label">LinkedIn</div>
+            <div class="value">/in/cristanaranez</div>
+          </a>
+          <a class="port" href="#">
+            <div class="label">Facebook</div>
+            <div class="value">/cristanaranez</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span><span class="dot"></span> © 2026 Cristan A. Arañez — All systems operational</span>
+      <span>Board Rev 2.0 · Assembled with care</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
